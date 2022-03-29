@@ -4,7 +4,7 @@ fun main() {
     print("Введите цифрами сумму в рублях")
     val amountRub: Int = readln().toInt()
     val amountCop: Int = amountRub * 100
-    val commission: Double = (amountCop * 0.75) % 100
+    val commission: Double = (amountCop * 0.75) / 100
     val result = if (commission < COMMISIONCOP) COMMISIONCOP else commission
     print("Ваша комиссия составит : $result копеек")
 }
