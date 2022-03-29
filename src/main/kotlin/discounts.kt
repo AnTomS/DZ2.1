@@ -1,18 +1,18 @@
 fun main() {
 
     print("Введите сумму покупок")
-    val dicsount: Int = readln().toInt()
-    if (dicsount >= 1001 || dicsount <= 10000) {
+    val discount: Int = readln().toInt()
+    if (discount >= 1001 || discount <= 10000) {
         print("Для текущей суммы покупок предусмотрена стандартная скидка - 100 рублей.")
-    } else if (dicsount >= 10001) {
+    } else if (discount >= 10001) {
         println("Для текущей суммы покупок предусмотрена скидка, составляющая 5% от суммы.")
     } else {
         println("Для текущей суммы покупок скидки не предусмотрены")
     }
 
     println("\n Введите сумму покупок в прошлом месяце")
-    val dicsount1: Int = readln().toInt()
-    if (dicsount1 > 0) {
+    val discount1: Int = readln().toInt()
+    if (discount1 > 0) {
         println("За покупки в прошлом месяце Вам полагается дополнительная скидка 1%")
     } else {
         println("Дополнительной скидки нет")
