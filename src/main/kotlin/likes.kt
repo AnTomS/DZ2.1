@@ -1,5 +1,5 @@
 fun main() {
-    print("Введите число лайков цифрами: ")
+    print("Введите количество лайков цифрами: ")
     val likes: Int = readln().toInt()
     val printLikes =
         if (likes == 1 || likes % 10 == 1 && likes % 100 != 11) "человеку" else "людям"
