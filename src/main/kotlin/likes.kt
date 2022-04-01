@@ -1,9 +1,7 @@
 fun main() {
-
-    print("Введите количество лайков цифрами")
+    print("Введите число лайков цифрами: ")
     val likes: Int = readln().toInt()
-    if (likes % 2 == 0)
-        println(" понравилось $likes людям")
-    else
-        println(" понравилось $likes человеку")
+    val printLikes =
+        if (likes == 1 || likes % 10 == 1 && likes % 100 != 11) "человеку" else "людям"
+    print("Понравилось $likes $printLikes")
 }
